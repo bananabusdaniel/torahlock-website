@@ -111,12 +111,24 @@ main {
 .hero .subtitle {
   font-size: 1rem;
   color: var(--muted);
+  max-width: 520px;
+  margin: 0.5rem auto 0;
+  line-height: 1.7;
 }
 
 /* ── Features ── */
 
 .features {
   padding: 2rem 0;
+}
+
+.features-heading {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 1.25rem;
 }
 
 .features-grid {
@@ -226,6 +238,12 @@ main {
   flex: 1;
   overflow: hidden;
   border-radius: 20px;
+  cursor: grab;
+  user-select: none;
+}
+
+.slider-viewport:active {
+  cursor: grabbing;
 }
 
 .slider-track {
@@ -243,17 +261,13 @@ main {
 }
 
 .slide img {
-  max-height: 480px;
+  max-height: 528px;
   width: auto;
   max-width: 100%;
   border-radius: 20px;
   box-shadow: 0 6px 32px rgba(9, 27, 52, 0.12);
   display: block;
-}
-
-.slide figcaption {
-  font-size: 0.85rem;
-  color: var(--muted);
+  pointer-events: none;
 }
 
 /* Arrow buttons */
@@ -513,7 +527,7 @@ footer p {
   }
 
   .slide img {
-    max-height: 380px;
+    max-height: 418px;
   }
 
   .slider-btn {
