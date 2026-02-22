@@ -310,7 +310,7 @@ footer p {
   color: var(--primary);
 }
 
-/* ── Page Content (privacy, terms, support) ── */
+/* ── Page Content (support) ── */
 
 .page-content {
   padding: 4rem 0;
@@ -333,6 +333,72 @@ footer p {
   color: var(--muted);
   max-width: 480px;
   margin-bottom: 1.5rem;
+}
+
+/* ── Legal Pages (privacy, terms) ── */
+
+.legal-content {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+}
+
+.legal-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.legal-content .legal-date {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.legal-content h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.legal-content p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: 0.75rem;
+  color: var(--primary);
+}
+
+.legal-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0.75rem;
+}
+
+.legal-content ul li {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  padding-left: 1.25rem;
+  position: relative;
+  margin-bottom: 0.25rem;
+}
+
+.legal-content ul li::before {
+  content: "·";
+  position: absolute;
+  left: 0.25rem;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.legal-content hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1.75rem 0;
+}
+
+.legal-content a {
+  color: var(--gold);
+  font-weight: 500;
 }
 
 /* ── Mobile ── */
