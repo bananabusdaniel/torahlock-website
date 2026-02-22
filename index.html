@@ -63,37 +63,69 @@
     <!-- Screenshots -->
     <section class="screenshots">
       <h2>See It in Action</h2>
-      <div class="screenshots-grid">
-        <figure class="screenshot-item">
-          <img src="assets/screenshots/Screenshot%202026-02-19%20at%207.20.33.png" alt="Torah Lock home screen showing Morning Session ready to start">
-          <figcaption>Home</figcaption>
-        </figure>
-        <figure class="screenshot-item">
-          <img src="assets/screenshots/Screenshot%202026-02-20%20at%2011.59.07.png" alt="Modeh Ani morning gratitude prayer screen">
-          <figcaption>Modeh Ani</figcaption>
-        </figure>
-        <figure class="screenshot-item">
-          <img src="assets/screenshots/Screenshot%202026-02-19%20at%207.17.10.png" alt="Shema declaration of faith screen">
-          <figcaption>Shema</figcaption>
-        </figure>
-        <figure class="screenshot-item">
-          <img src="assets/screenshots/Screenshot%202026-02-19%20at%2019.31.36.png" alt="Tehillim personalized Hebrew psalm verses">
-          <figcaption>Tehillim</figcaption>
-        </figure>
-        <figure class="screenshot-item">
-          <img src="assets/screenshots/Screenshot%202026-02-20%20at%2011.59.36.png" alt="Tehillim personalized English psalm verses">
-          <figcaption>Tehillim (EN)</figcaption>
-        </figure>
-        <figure class="screenshot-item">
-          <img src="assets/screenshots/Screenshot%202026-02-20%20at%2012.21.23.png" alt="Tehillim library with categories like Calm and Trust, Hope and Comfort">
-          <figcaption>Library</figcaption>
-        </figure>
-        <figure class="screenshot-item">
-          <img src="assets/screenshots/Screenshot%202026-02-20%20at%2012.54.20.png" alt="71 day streak celebration screen">
-          <figcaption>Daily Streak</figcaption>
-        </figure>
+      <div class="slider">
+        <button class="slider-btn slider-prev" aria-label="Previous screenshot">&#8249;</button>
+        <div class="slider-viewport">
+          <div class="slider-track">
+            <figure class="slide">
+              <img src="assets/screenshots/Screenshot%202026-02-19%20at%207.20.33.png" alt="Torah Lock home screen showing Morning Session ready to start">
+              <figcaption>Home</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/screenshots/Screenshot%202026-02-20%20at%2011.59.07.png" alt="Modeh Ani morning gratitude prayer screen">
+              <figcaption>Modeh Ani</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/screenshots/Screenshot%202026-02-19%20at%207.17.10.png" alt="Shema declaration of faith screen">
+              <figcaption>Shema</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/screenshots/Screenshot%202026-02-19%20at%2019.31.36.png" alt="Tehillim personalized Hebrew psalm verses">
+              <figcaption>Tehillim (HE)</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/screenshots/Screenshot%202026-02-20%20at%2011.59.36.png" alt="Tehillim personalized English psalm verses">
+              <figcaption>Tehillim (EN)</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/screenshots/Screenshot%202026-02-20%20at%2012.21.23.png" alt="Tehillim library with categories like Calm and Trust, Hope and Comfort">
+              <figcaption>Library</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/screenshots/Screenshot%202026-02-20%20at%2012.54.20.png" alt="71 day streak celebration screen">
+              <figcaption>Daily Streak</figcaption>
+            </figure>
+          </div>
+        </div>
+        <button class="slider-btn slider-next" aria-label="Next screenshot">&#8250;</button>
+      </div>
+      <div class="slider-dots">
+        <button class="slider-dot active" aria-label="Go to slide 1"></button>
+        <button class="slider-dot" aria-label="Go to slide 2"></button>
+        <button class="slider-dot" aria-label="Go to slide 3"></button>
+        <button class="slider-dot" aria-label="Go to slide 4"></button>
+        <button class="slider-dot" aria-label="Go to slide 5"></button>
+        <button class="slider-dot" aria-label="Go to slide 6"></button>
+        <button class="slider-dot" aria-label="Go to slide 7"></button>
       </div>
     </section>
+
+  <script>
+    const track = document.querySelector('.slider-track');
+    const slides = track.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.slider-dot');
+    let current = 0;
+
+    function goTo(n) {
+      current = (n + slides.length) % slides.length;
+      track.style.transform = 'translateX(-' + (current * 100) + '%)';
+      dots.forEach(function(d, i) { d.classList.toggle('active', i === current); });
+    }
+
+    document.querySelector('.slider-prev').addEventListener('click', function() { goTo(current - 1); });
+    document.querySelector('.slider-next').addEventListener('click', function() { goTo(current + 1); });
+    dots.forEach(function(d, i) { d.addEventListener('click', function() { goTo(i); }); });
+  </script>
 
     <!-- CTA -->
     <section class="cta">

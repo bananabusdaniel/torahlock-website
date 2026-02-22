@@ -215,42 +215,93 @@ main {
   margin-bottom: 1.5rem;
 }
 
-.screenshots-grid {
+/* Slider layout: arrow | viewport | arrow */
+.slider {
   display: flex;
-  gap: 1.25rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 1rem;
-  /* hide scrollbar */
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  align-items: center;
+  gap: 1rem;
 }
 
-.screenshots-grid::-webkit-scrollbar {
-  display: none;
+.slider-viewport {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
-.screenshot-item {
-  flex: 0 0 180px;
-  scroll-snap-align: start;
+.slider-track {
+  display: flex;
+  transition: transform 0.35s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.75rem;
+  padding: 0 2rem;
 }
 
-.screenshot-item img {
-  width: 100%;
-  border-radius: 18px;
-  box-shadow: 0 4px 20px rgba(9, 27, 52, 0.10);
+.slide img {
+  max-height: 480px;
+  width: auto;
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 6px 32px rgba(9, 27, 52, 0.12);
   display: block;
 }
 
-.screenshot-item figcaption {
-  font-size: 0.8rem;
+.slide figcaption {
+  font-size: 0.85rem;
   color: var(--muted);
-  text-align: center;
+}
+
+/* Arrow buttons */
+.slider-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--primary);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-btn:hover {
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+}
+
+/* Dot indicators */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.slider-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: none;
+  background: var(--border);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.slider-dot.active {
+  background: var(--gold);
+  transform: scale(1.2);
 }
 
 /* ── CTA ── */
@@ -457,8 +508,18 @@ footer p {
     gap: 1rem;
   }
 
-  .screenshot-item {
-    flex: 0 0 140px;
+  .slide {
+    padding: 0 0.5rem;
+  }
+
+  .slide img {
+    max-height: 380px;
+  }
+
+  .slider-btn {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.1rem;
   }
 
   .cta-links {
