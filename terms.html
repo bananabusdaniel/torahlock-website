@@ -20,105 +20,131 @@
   <main>
     <article class="legal-content">
       <h1>Terms of Service</h1>
-      <p class="legal-date">Effective Date: February 22, 2026</p>
+      <p class="legal-date">Effective Date: March 22, 2026</p>
 
-      <p>Welcome to Torah Lock. By downloading or using the app, you agree to these Terms of Service. If you do not agree, please do not use the app.</p>
+      <p>Welcome to Torah Lock. By downloading or using the app, you agree to these Terms of Service ("Terms"). If you do not agree, please do not use the app.</p>
 
       <hr>
 
       <h2>1. Use of the App</h2>
-      <p>Torah Lock is an iOS application designed to help users begin their day with prayer and spiritual focus before accessing selected apps.</p>
-      <p>The app may use Apple's Screen Time API and Family Controls frameworks to temporarily restrict selected applications until the daily morning spiritual session is completed.</p>
-      <p>You agree to use Torah Lock only for its intended personal and spiritual use. Any attempt to bypass, manipulate, or interfere with the app's restriction features is prohibited.</p>
+      <p>Torah Lock is an iOS application designed to help users begin their day with a short spiritual moment — including prayer (Shema) and Tehillim (Psalms) — before accessing selected apps.</p>
+      <p>The app uses Apple's FamilyControls and ManagedSettings frameworks to temporarily restrict selected applications during a morning enforcement window (default: 5:30 AM – 12:00 PM) until the daily spiritual session is completed.</p>
+      <p>You agree to use Torah Lock only for its intended personal and spiritual use. Any attempt to bypass, manipulate, or interfere with the app's restriction features outside of the provided emergency unlock is prohibited.</p>
 
       <hr>
 
       <h2>2. Local Data &amp; No Account Requirement</h2>
       <p>Torah Lock does not require you to create an account.</p>
-      <p>All personal progress data (such as streaks, preferences, and session history) is stored locally on your device unless otherwise stated. We do not monitor or track your personal device activity outside the app.</p>
+      <p>All personal progress data (such as streaks, check-in scores, preferences, and session history) is stored locally on your device. We do not monitor or track your personal device activity outside the app.</p>
+      <p>During onboarding, you may provide your first name, age range, preferences, and optionally a profile photo. This information is stored locally on your device. Your first name is also sent to our analytics provider (PostHog) to personalize your experience. See our <a href="privacy.html">Privacy Policy</a> for full details.</p>
 
       <hr>
 
       <h2>3. Subscriptions &amp; Payments</h2>
-      <p>Torah Lock may offer optional paid features through auto-renewable subscriptions.</p>
+      <p>Torah Lock offers optional paid features through auto-renewable subscriptions.</p>
       <ul>
-        <li>Payments are processed through Apple's App Store.</li>
+        <li>Payments are processed exclusively through Apple's App Store.</li>
         <li>Subscriptions automatically renew unless canceled at least 24 hours before the end of the current billing period.</li>
-        <li>You can manage or cancel your subscription at any time through your Apple ID settings.</li>
-        <li>Refunds are handled according to Apple's App Store policies.</li>
+        <li>You can manage or cancel your subscription at any time through your Apple ID settings (Settings &gt; [Your Name] &gt; Subscriptions).</li>
+        <li>Refunds are handled according to Apple's App Store refund policies.</li>
+        <li>RevenueCat is used to manage subscription entitlements and verify purchase status.</li>
       </ul>
 
       <hr>
 
-      <h2>4. Device Restrictions (Screen Time / Family Controls)</h2>
-      <p>App restrictions are performed locally on your device using Apple's system frameworks.</p>
-      <p>Torah Lock does not collect, transmit, or store detailed app usage data on external servers. The restriction functionality is intended solely for personal self-management and focus.</p>
+      <h2>4. Device Restrictions (Family Controls)</h2>
+      <p>App restrictions are performed locally on your device using Apple's FamilyControls and ManagedSettings system frameworks.</p>
+      <ul>
+        <li>You select which apps to restrict. This selection is stored only on your device.</li>
+        <li>Torah Lock does not collect, transmit, or store which apps you selected or how you use them.</li>
+        <li>Restrictions are automatically removed when the enforcement window ends (12:00 PM) or when you complete the daily moment.</li>
+        <li>An emergency unlock feature is available to temporarily remove restrictions before completion. Use of this feature is logged as an anonymous analytics event.</li>
+      </ul>
+      <p>The restriction functionality is intended solely for voluntary personal self-management. Torah Lock is not a parental control app.</p>
 
       <hr>
 
       <h2>5. Third-Party Services</h2>
-      <p>Torah Lock may use trusted third-party services to support app functionality, such as:</p>
+      <p>Torah Lock uses the following third-party services to support app functionality:</p>
       <ul>
-        <li>Apple App Store (payments and subscriptions)</li>
-        <li>RevenueCat (subscription management)</li>
-        <li>Analytics tools for anonymous usage insights (if enabled)</li>
+        <li><strong>Apple App Store</strong> — payment processing, subscriptions, and crash diagnostics</li>
+        <li><strong>RevenueCat</strong> — subscription management and entitlement verification</li>
+        <li><strong>PostHog</strong> — product analytics to understand usage patterns and improve the app (hosted in the United States)</li>
+        <li><strong>Hebcal</strong> — Shabbat and Jewish calendar times (receives your approximate location coordinates)</li>
       </ul>
-      <p>Any data shared with third-party services is limited, anonymized where possible, and not used for advertising or sold to third parties.</p>
+      <p>Data shared with third-party services is limited to what is necessary for their function. No data is used for advertising or sold to third parties. Each service operates under its own privacy policy and terms.</p>
 
       <hr>
 
-      <h2>6. Acceptable Use</h2>
+      <h2>6. Location Services</h2>
+      <p>Torah Lock may request access to your location (When In Use) to determine Shabbat times for your area. Location data is used at city-level accuracy only. Your coordinates and timezone are sent to the Hebcal API to retrieve Shabbat times, which are then cached locally on your device. You may deny or revoke location access at any time in iOS Settings.</p>
+
+      <hr>
+
+      <h2>7. Acceptable Use</h2>
       <p>You agree not to:</p>
       <ul>
         <li>Use the app for unlawful purposes</li>
-        <li>Attempt to reverse engineer or modify the app</li>
-        <li>Circumvent or exploit the restriction system</li>
-        <li>Interfere with the app's normal operation</li>
+        <li>Attempt to reverse engineer, decompile, or modify the app</li>
+        <li>Circumvent or exploit the restriction system outside of the provided emergency unlock</li>
+        <li>Interfere with the app's normal operation or Apple's system frameworks</li>
+        <li>Use the app to restrict another person's device without their knowledge or consent</li>
       </ul>
       <p>We reserve the right to limit or suspend access if misuse is detected.</p>
 
       <hr>
 
-      <h2>7. Spiritual Content Disclaimer</h2>
-      <p>Torah Lock provides prayers, Tehillim, and spiritual guidance for inspirational and devotional purposes only.</p>
+      <h2>8. Spiritual Content Disclaimer</h2>
+      <p>Torah Lock provides prayers (Shema), Tehillim (Psalms), and spiritual content for inspirational and devotional purposes only. Tehillim text is sourced from Sefaria (JPS 1917 translation) and bundled within the app.</p>
       <p>The app does not provide religious, medical, psychological, or professional advice. Users should consult appropriate professionals or spiritual leaders for personal guidance when needed.</p>
 
       <hr>
 
-      <h2>8. Age Requirement</h2>
-      <p>Torah Lock is intended for general audiences. If the app is used by minors, parents or guardians are responsible for supervision and consent, especially when enabling device restrictions.</p>
+      <h2>9. Age Requirement</h2>
+      <p>Torah Lock is rated 4+ on the App Store and is intended for general audiences. If the app is used by a minor, a parent or guardian is responsible for supervision and consent, particularly when granting Family Controls permissions or providing personal information during onboarding.</p>
 
       <hr>
 
-      <h2>9. Disclaimer of Warranties</h2>
-      <p>Torah Lock is provided "as is" and "as available" without warranties of any kind.</p>
+      <h2>10. Intellectual Property</h2>
+      <p>All app design, code, branding, and original content are the property of Torah Lock. Tehillim text is sourced from Sefaria under their terms of use. You may not reproduce, distribute, or create derivative works from the app or its content without written permission.</p>
+
+      <hr>
+
+      <h2>11. Disclaimer of Warranties</h2>
+      <p>Torah Lock is provided "as is" and "as available" without warranties of any kind, whether express or implied.</p>
       <p>We do not guarantee:</p>
       <ul>
-        <li>Continuous availability or error-free operation</li>
-        <li>Effectiveness in improving habits or spiritual practice</li>
-        <li>Compatibility with all devices or system configurations</li>
+        <li>Continuous, uninterrupted, or error-free operation</li>
+        <li>That app restrictions will function in all device configurations or iOS versions</li>
+        <li>Effectiveness in improving habits, spiritual practice, or screen time reduction</li>
+        <li>Accuracy of Shabbat times (which depend on third-party data from Hebcal)</li>
       </ul>
 
       <hr>
 
-      <h2>10. Limitation of Liability</h2>
-      <p>To the fullest extent permitted by law, Torah Lock and its developers will not be liable for any indirect, incidental, special, or consequential damages resulting from the use or inability to use the app.</p>
+      <h2>12. Limitation of Liability</h2>
+      <p>To the fullest extent permitted by law, Torah Lock and its developers will not be liable for any indirect, incidental, special, or consequential damages resulting from the use or inability to use the app, including but not limited to missed restrictions, incorrect Shabbat times, lost data, or subscription charges.</p>
 
       <hr>
 
-      <h2>11. Changes to These Terms</h2>
-      <p>We may update these Terms from time to time. Continued use of the app after changes become effective constitutes acceptance of the updated Terms.</p>
+      <h2>13. Governing Law</h2>
+      <p>These Terms are governed by and construed in accordance with the laws of the State of California, United States, without regard to conflict of law principles.</p>
 
       <hr>
 
-      <h2>12. Contact</h2>
+      <h2>14. Changes to These Terms</h2>
+      <p>We may update these Terms from time to time. The updated version will include a new Effective Date at the top of this page. Continued use of the app after changes become effective constitutes acceptance of the updated Terms.</p>
+
+      <hr>
+
+      <h2>15. Contact</h2>
       <p>If you have questions about these Terms, please contact:</p>
       <p><a href="mailto:support@torahlock.app">support@torahlock.app</a></p>
     </article>
   </main>
 
   <footer>
-    <p>&copy; 2025 Torah Lock. All rights reserved.</p>
+    <p>&copy; 2026 Torah Lock. All rights reserved.</p>
     <div class="footer-links">
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>

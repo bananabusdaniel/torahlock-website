@@ -20,97 +20,162 @@
   <main>
     <article class="legal-content">
       <h1>Privacy Policy</h1>
-      <p class="legal-date">Effective Date: February 22, 2026</p>
+      <p class="legal-date">Effective Date: March 22, 2026</p>
 
-      <p>This Privacy Policy explains how Torah Lock ("we," "our," or "us") handles information when you use our iOS application.</p>
+      <p>This Privacy Policy explains how Torah Lock ("we," "our," or "us") collects, uses, and protects information when you use our iOS application. We are committed to transparency and minimizing data collection.</p>
       <p>By using Torah Lock, you agree to the practices described in this policy.</p>
 
       <hr>
 
       <h2>1. Information We Collect</h2>
-      <p>We are committed to minimizing data collection.</p>
-      <p>We do not collect personal information such as your name, email address, contacts, messages, or detailed device activity.</p>
-      <p>The following information may be collected automatically:</p>
+
+      <h3>a. Information You Provide</h3>
+      <p>During onboarding and app use, you may provide the following information, which is stored locally on your device:</p>
+      <ul>
+        <li>First name</li>
+        <li>Age range (e.g., 0–2, 2–5, 5–13, 13+)</li>
+        <li>Daily phone usage estimate</li>
+        <li>Spiritual preferences and goals</li>
+        <li>Profile photo (captured via camera or selected from your photo library)</li>
+        <li>Digital signature (optional, via on-screen drawing)</li>
+        <li>Daily check-in responses (calm, readiness, and connection scores)</li>
+      </ul>
+
+      <h3>b. Location Data</h3>
+      <p>If you grant location permission, Torah Lock collects your approximate location (city-level accuracy) to determine Shabbat times for your area. The following location data is stored locally on your device:</p>
+      <ul>
+        <li>City name</li>
+        <li>Latitude and longitude coordinates</li>
+        <li>IANA timezone identifier (e.g., "America/New_York")</li>
+      </ul>
+      <p>Your latitude, longitude, and timezone are sent to the Hebcal API to fetch Shabbat times. No other location data is transmitted externally.</p>
+
+      <h3>c. Analytics Data</h3>
+      <p>We use PostHog, a product analytics service, to understand how the app is used and improve the experience. PostHog collects:</p>
+      <ul>
+        <li>A unique anonymous identifier (not your Apple ID or device ID)</li>
+        <li>Your first name (as provided during onboarding)</li>
+        <li>App events such as: onboarding progress, daily flow completion, psalm interactions, paywall views, streak milestones, and feature usage</li>
+        <li>Event metadata such as psalm IDs, segment IDs, check-in scores, session duration, and language preferences</li>
+        <li>Basic device information (device model, iOS version, app version)</li>
+      </ul>
+      <p>PostHog data is sent to servers in the United States. PostHog does not use this data for advertising or sell it to third parties.</p>
+
+      <h3>d. Information Collected Automatically</h3>
       <ul>
         <li>App performance data (crashes, errors) via Apple diagnostics</li>
-        <li>Anonymous usage data (such as screens viewed or feature usage)</li>
-        <li>Basic device information (device model, iOS version, language, region)</li>
+        <li>Subscription and purchase status via RevenueCat</li>
       </ul>
-      <p>If you provide optional information inside the app (such as location for Shabbat times or personal preferences), that information is stored locally on your device.</p>
 
       <hr>
 
       <h2>2. Screen Time / Family Controls Data</h2>
-      <p>If you enable app restrictions using Apple's Screen Time or Family Controls frameworks:</p>
+      <p>Torah Lock uses Apple's FamilyControls and ManagedSettings frameworks to temporarily restrict selected apps during the morning enforcement window (5:30 AM – 12:00 PM).</p>
       <ul>
-        <li>All restriction and monitoring functions operate locally on your device</li>
-        <li>Torah Lock does not collect, transmit, or store detailed app usage data</li>
-        <li>We do not monitor which specific apps you use or how long you use them outside of what is required for the restriction feature</li>
+        <li>You choose which apps to restrict. This selection is stored locally on your device only.</li>
+        <li>All restriction and monitoring functions operate entirely on your device using Apple's system frameworks.</li>
+        <li>Torah Lock does not collect, transmit, or store which specific apps you use or how long you use them.</li>
+        <li>The app includes an emergency unlock feature that temporarily removes restrictions. Usage of this feature is logged as an anonymous analytics event (no app details are sent).</li>
       </ul>
 
       <hr>
 
       <h2>3. How We Use Information</h2>
-      <p>Any collected information is used only to:</p>
+      <p>We use collected information to:</p>
       <ul>
-        <li>Maintain and improve app performance</li>
-        <li>Diagnose bugs or crashes</li>
-        <li>Understand general, anonymous usage patterns</li>
+        <li>Personalize your daily spiritual experience (psalm and segment selection based on your responses)</li>
+        <li>Determine accurate Shabbat times for your location</li>
+        <li>Track your completion streaks and progress locally</li>
+        <li>Understand general usage patterns to improve the app</li>
+        <li>Diagnose bugs, crashes, and performance issues</li>
         <li>Manage subscriptions and purchase status</li>
       </ul>
-      <p>We do not use your data for advertising, profiling, or selling to third parties.</p>
+      <p>We do not use your data for advertising, behavioral profiling, or cross-app tracking. We do not sell your data to third parties.</p>
 
       <hr>
 
       <h2>4. Third-Party Services</h2>
-      <p>Torah Lock may use trusted third-party services to support core functionality:</p>
+      <p>Torah Lock uses the following third-party services:</p>
       <ul>
-        <li>Apple App Store — purchases, subscriptions, and analytics</li>
-        <li>RevenueCat — subscription management and entitlement status</li>
-        <li>Apple Diagnostics — crash and performance reporting</li>
-        <li>Hebcal — we fetch Shabbat times and Jewish calendar data from Hebcal</li>
-        <li>Sefaria — Tehillim text is provided via the Sefaria API</li>
+        <li><strong>Apple App Store</strong> — purchases, subscriptions, and crash reporting</li>
+        <li><strong>RevenueCat</strong> — subscription management and entitlement verification. RevenueCat receives your anonymous PostHog identifier for analytics attribution.</li>
+        <li><strong>PostHog</strong> — product analytics (hosted in the United States). Collects anonymous usage events and your first name. See Section 1c for details.</li>
+        <li><strong>Hebcal</strong> — Shabbat and Jewish calendar times. Receives your latitude, longitude, and timezone. Hebcal is a free, open-source service with no authentication required.</li>
+        <li><strong>Apple CoreLocation / CLGeocoder</strong> — reverse geocoding to determine your city name from coordinates. Processed on-device by Apple.</li>
       </ul>
-      <p>These services may process limited technical or anonymous data according to their own privacy policies. No personally identifiable information is intentionally transmitted by Torah Lock.</p>
+      <p>Each third-party service operates under its own privacy policy. We transmit only the minimum data necessary for each service to function.</p>
 
       <hr>
 
-      <h2>5. Data Storage</h2>
-      <p>Most user data (such as streaks, settings, and session history) is stored locally on your device.</p>
-      <p>We do not maintain a user account system, and we do not store personal user profiles on external servers.</p>
-      <p>Deleting the app will remove locally stored data from your device.</p>
-
-      <hr>
-
-      <h2>6. Children's Privacy</h2>
-      <p>Torah Lock is rated 4+ on the App Store. We do not knowingly collect personal information from children under the age of 13. If you believe that personal data has been unintentionally collected, please contact us and we will take appropriate action.</p>
-
-      <hr>
-
-      <h2>7. Your Choices</h2>
-      <p>You can limit data sharing by:</p>
+      <h2>5. Data Storage and Retention</h2>
+      <p>The majority of your data is stored locally on your device in a shared App Group container:</p>
       <ul>
-        <li>Disabling analytics and diagnostics sharing in your iOS settings</li>
-        <li>Managing Screen Time and Family Controls permissions through iOS</li>
-        <li>Canceling subscriptions through your Apple ID settings</li>
+        <li>Daily progress, preferences, streaks, and settings are stored as local JSON files.</li>
+        <li>Streak history is maintained on a rolling 90-day window; older entries are automatically removed.</li>
+        <li>Shabbat time data is cached locally for 4–6 weeks and refreshed weekly.</li>
       </ul>
-      <p>Since no user accounts are created, there is no centralized profile stored by us.</p>
+      <p>We do not maintain a user account system and do not store personal user profiles on our own servers.</p>
+      <p>Analytics data sent to PostHog is retained according to PostHog's data retention policies.</p>
+      <p><strong>Deleting the app will remove all locally stored data from your device.</strong> To request deletion of analytics data held by PostHog, please contact us at the email below.</p>
 
       <hr>
 
-      <h2>8. Changes to This Policy</h2>
-      <p>We may update this Privacy Policy from time to time. The updated version will include a new Effective Date. Continued use of the app after changes take effect constitutes acceptance of the revised policy.</p>
+      <h2>6. Device Permissions</h2>
+      <p>Torah Lock may request the following device permissions:</p>
+      <ul>
+        <li><strong>Family Controls</strong> — required for the app restriction feature</li>
+        <li><strong>Location (When In Use)</strong> — optional, used to determine Shabbat times for your area</li>
+        <li><strong>Camera</strong> — optional, used to capture a profile photo during onboarding</li>
+        <li><strong>Photo Library</strong> — optional, used to select a profile photo from your library</li>
+        <li><strong>Notifications</strong> — optional, used for reminder notifications</li>
+      </ul>
+      <p>You can revoke any of these permissions at any time through your device's Settings app.</p>
 
       <hr>
 
-      <h2>9. Contact</h2>
-      <p>If you have questions about this Privacy Policy or your data, please contact:</p>
+      <h2>7. Children's Privacy</h2>
+      <p>Torah Lock is rated 4+ on the App Store. We do not knowingly collect personal information from children under the age of 13. The app collects a first name and age range during onboarding; for users under 13, a parent or guardian should provide this information and supervise use of the app. If you believe that personal data has been unintentionally collected from a child, please contact us and we will take appropriate action.</p>
+
+      <hr>
+
+      <h2>8. Your Rights and Choices</h2>
+      <p>You can control your data in the following ways:</p>
+      <ul>
+        <li>Revoke location, camera, photo library, or notification permissions in iOS Settings</li>
+        <li>Disable analytics and diagnostics sharing in iOS Settings</li>
+        <li>Manage or revoke Family Controls permissions through iOS Settings</li>
+        <li>Cancel subscriptions through your Apple ID settings</li>
+        <li>Delete the app to remove all locally stored data</li>
+        <li>Request deletion of analytics data by contacting us</li>
+      </ul>
+      <p>If you are located in the European Economic Area (EEA), United Kingdom, or California, you may have additional rights under GDPR or CCPA, including the right to access, correct, delete, or port your data. To exercise these rights, please contact us at the email below.</p>
+
+      <hr>
+
+      <h2>9. Data Security</h2>
+      <p>We take reasonable measures to protect your data:</p>
+      <ul>
+        <li>All network communications use HTTPS encryption</li>
+        <li>Local data is protected by iOS's built-in file system security and App Group sandboxing</li>
+        <li>Local files use atomic writes to prevent data corruption</li>
+      </ul>
+      <p>No method of electronic storage is 100% secure. While we strive to protect your data, we cannot guarantee absolute security.</p>
+
+      <hr>
+
+      <h2>10. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. The updated version will include a new Effective Date at the top of this page. We encourage you to review this policy periodically. Continued use of the app after changes take effect constitutes acceptance of the revised policy.</p>
+
+      <hr>
+
+      <h2>11. Contact</h2>
+      <p>If you have questions about this Privacy Policy, wish to exercise your data rights, or want to request deletion of your data, please contact:</p>
       <p><a href="mailto:support@torahlock.app">support@torahlock.app</a></p>
     </article>
   </main>
 
   <footer>
-    <p>&copy; 2025 Torah Lock. All rights reserved.</p>
+    <p>&copy; 2026 Torah Lock. All rights reserved.</p>
     <div class="footer-links">
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
