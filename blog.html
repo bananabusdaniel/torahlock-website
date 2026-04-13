@@ -28,6 +28,7 @@
     <section class="blog-header">
       <p class="section-eyebrow">From the Torah Lock team</p>
       <h1 class="section-title">Blog</h1>
+      <p class="blog-header-subtitle">Insights on prayer, presence, and putting Hashem first in a distracted world.</p>
     </section>
 
     <!-- Topic Filter -->
@@ -43,11 +44,14 @@
     <div class="blog-grid" id="blog-grid">
 
       <!-- Post 1 -->
-      <a href="blog/why-the-morning-matters-most.html" class="blog-card" data-topic="digital-wellness">
+      <a href="blog/why-the-morning-matters-most.html" class="blog-card fade-up" data-topic="digital-wellness">
         <div class="blog-card-body">
           <div class="blog-card-meta">
             <span class="blog-topic">Digital Wellness</span>
+            <span class="blog-meta-dot">&bull;</span>
             <span class="blog-date">April 13, 2026</span>
+            <span class="blog-meta-dot">&bull;</span>
+            <span class="blog-reading-time">5 min read</span>
           </div>
           <h2 class="blog-card-title">Why the Morning Matters Most</h2>
           <p class="blog-card-excerpt">The first five minutes after waking set the tone for your entire day. Here's what the research says — and what the Torah always knew.</p>
@@ -56,11 +60,14 @@
       </a>
 
       <!-- Post 2 -->
-      <a href="blog/the-power-of-tehillim-in-five-verses.html" class="blog-card" data-topic="tehillim">
+      <a href="blog/the-power-of-tehillim-in-five-verses.html" class="blog-card fade-up" data-topic="tehillim">
         <div class="blog-card-body">
           <div class="blog-card-meta">
             <span class="blog-topic">Tehillim</span>
+            <span class="blog-meta-dot">&bull;</span>
             <span class="blog-date">April 10, 2026</span>
+            <span class="blog-meta-dot">&bull;</span>
+            <span class="blog-reading-time">6 min read</span>
           </div>
           <h2 class="blog-card-title">The Power of Tehillim in Five Verses</h2>
           <p class="blog-card-excerpt">You don't need to read an entire psalm to feel its impact. How a small segment of Tehillim can shift your entire mindset before the day begins.</p>
@@ -111,6 +118,21 @@
 
         emptyState.style.display = visibleCount === 0 ? '' : 'none';
       });
+    });
+
+    // Scroll-triggered fade-in
+    var observerOptions = { threshold: 0.1, rootMargin: '0px 0px -40px 0px' };
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up').forEach(function(el) {
+      observer.observe(el);
     });
   </script>
 
