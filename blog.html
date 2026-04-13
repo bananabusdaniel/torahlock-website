@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Torah Lock</title>
+  <meta name="description" content="Insights on Jewish prayer, digital wellness, and building a deeper connection with Hashem. The Torah Lock blog.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Torah Lock</a>
+    <ul class="nav-links">
+      <li><a href="blog.html" class="nav-active">Blog</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="blog-header">
+      <p class="section-eyebrow">From the Torah Lock team</p>
+      <h1 class="section-title">Blog</h1>
+    </section>
+
+    <!-- Topic Filter -->
+    <div class="blog-filters">
+      <button class="blog-filter active" data-topic="all">All</button>
+      <button class="blog-filter" data-topic="digital-wellness">Digital Wellness</button>
+      <button class="blog-filter" data-topic="tehillim">Tehillim</button>
+      <button class="blog-filter" data-topic="product">Product</button>
+      <button class="blog-filter" data-topic="inspiration">Inspiration</button>
+    </div>
+
+    <!-- Blog Grid -->
+    <div class="blog-grid" id="blog-grid">
+
+      <!-- Post 1 -->
+      <a href="blog/why-the-morning-matters-most.html" class="blog-card" data-topic="digital-wellness">
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="blog-topic">Digital Wellness</span>
+            <span class="blog-date">April 13, 2026</span>
+          </div>
+          <h2 class="blog-card-title">Why the Morning Matters Most</h2>
+          <p class="blog-card-excerpt">The first five minutes after waking set the tone for your entire day. Here's what the research says — and what the Torah always knew.</p>
+          <span class="blog-read-more">Read more &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Post 2 -->
+      <a href="blog/the-power-of-tehillim-in-five-verses.html" class="blog-card" data-topic="tehillim">
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="blog-topic">Tehillim</span>
+            <span class="blog-date">April 10, 2026</span>
+          </div>
+          <h2 class="blog-card-title">The Power of Tehillim in Five Verses</h2>
+          <p class="blog-card-excerpt">You don't need to read an entire psalm to feel its impact. How a small segment of Tehillim can shift your entire mindset before the day begins.</p>
+          <span class="blog-read-more">Read more &rarr;</span>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Empty state for filtered results -->
+    <div class="blog-empty" id="blog-empty" style="display: none;">
+      <p>No posts in this topic yet. Check back soon.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Torah Lock. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="blog.html">Blog</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html">Support</a>
+    </div>
+  </footer>
+
+  <script>
+    // Topic filtering
+    var filters = document.querySelectorAll('.blog-filter');
+    var cards = document.querySelectorAll('.blog-card');
+    var emptyState = document.getElementById('blog-empty');
+
+    filters.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var topic = btn.getAttribute('data-topic');
+
+        filters.forEach(function(f) { f.classList.remove('active'); });
+        btn.classList.add('active');
+
+        var visibleCount = 0;
+        cards.forEach(function(card) {
+          if (topic === 'all' || card.getAttribute('data-topic') === topic) {
+            card.style.display = '';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        emptyState.style.display = visibleCount === 0 ? '' : 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>
