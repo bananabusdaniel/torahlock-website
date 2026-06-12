@@ -2,290 +2,210 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://torahlock.app/</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-06-09</lastmod>
   </url>
   <url>
-    <loc>https://torahlock.app/privacy.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/terms.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/support.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://torahlock.app/about.html</loc>
+    <lastmod>2026-06-09</lastmod>
   </url>
   <url>
     <loc>https://torahlock.app/blog.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-06-09</lastmod>
   </url>
   <url>
-    <loc>https://torahlock.app/blog/why-the-morning-matters-most.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://torahlock.app/faq.html</loc>
+    <lastmod>2026-06-09</lastmod>
   </url>
   <url>
-    <loc>https://torahlock.app/blog/the-power-of-tehillim-in-five-verses.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://torahlock.app/features.html</loc>
+    <lastmod>2026-06-09</lastmod>
   </url>
   <url>
-    <loc>https://torahlock.app/blog/what-is-the-shema.html</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://torahlock.app/privacy.html</loc>
+    <lastmod>2026-06-09</lastmod>
   </url>
   <url>
-    <loc>https://torahlock.app/blog/modeh-ani-the-first-prayer-of-the-day.html</loc>
-    <lastmod>2026-04-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://torahlock.app/support.html</loc>
+    <lastmod>2026-06-09</lastmod>
   </url>
   <url>
-    <loc>https://torahlock.app/blog/kavanah-how-to-pray-with-intention.html</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://torahlock.app/terms.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/why-torah-lock.html</loc>
+    <lastmod>2026-06-09</lastmod>
   </url>
   <url>
     <loc>https://torahlock.app/blog/birchot-hashachar-morning-blessings.html</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/which-tehillim-to-say-every-morning.html</loc>
-    <lastmod>2026-04-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/how-to-stop-checking-your-phone-in-the-morning.html</loc>
-    <lastmod>2026-04-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/what-does-baruch-hashem-mean.html</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/emunah-vs-bitachon.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/what-is-daf-yomi.html</loc>
-    <lastmod>2026-04-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/what-is-shacharit.html</loc>
-    <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/tehillim-for-healing.html</loc>
-    <lastmod>2026-04-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/pirkei-avot-ethics-of-the-fathers.html</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/digital-shabbat-unplugging-once-a-week.html</loc>
-    <lastmod>2026-04-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/what-is-tefillin.html</loc>
-    <lastmod>2026-04-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-06-09</lastmod>
   </url>
   <url>
     <loc>https://torahlock.app/blog/counting-the-omer-sefirat-haomer.html</loc>
-    <lastmod>2026-04-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-06-09</lastmod>
   </url>
   <url>
-    <loc>https://torahlock.app/blog/what-is-mussar.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://torahlock.app/blog/digital-shabbat-unplugging-once-a-week.html</loc>
+    <lastmod>2026-06-09</lastmod>
   </url>
   <url>
-    <loc>https://torahlock.app/blog/what-is-the-amidah.html</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://torahlock.app/blog/emunah-vs-bitachon.html</loc>
+    <lastmod>2026-06-09</lastmod>
   </url>
   <url>
-    <loc>https://torahlock.app/blog/what-is-lag-baomer.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://torahlock.app/blog/how-to-stop-checking-your-phone-in-the-morning.html</loc>
+    <lastmod>2026-06-09</lastmod>
   </url>
   <url>
-    <loc>https://torahlock.app/blog/tehillim-for-anxiety.html</loc>
-    <lastmod>2026-05-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://torahlock.app/blog/kavanah-how-to-pray-with-intention.html</loc>
+    <lastmod>2026-06-09</lastmod>
   </url>
   <url>
-    <loc>https://torahlock.app/blog/what-is-hakarat-hatov.html</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://torahlock.app/blog/modeh-ani-the-first-prayer-of-the-day.html</loc>
+    <lastmod>2026-06-09</lastmod>
   </url>
   <url>
-    <loc>https://torahlock.app/blog/what-is-shavuot.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/what-the-torah-says-about-phone-addiction.html</loc>
-    <lastmod>2026-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/psalm-23-meaning-in-judaism.html</loc>
-    <lastmod>2026-05-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/what-is-tikkun-olam.html</loc>
-    <lastmod>2026-05-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/what-is-the-yetzer-hara.html</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/tikkun-leil-shavuot.html</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/what-is-tehillim.html</loc>
-    <lastmod>2026-05-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/what-is-the-talmud.html</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/what-is-a-dopamine-detox.html</loc>
-    <lastmod>2026-05-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/what-is-simcha.html</loc>
-    <lastmod>2026-05-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/what-is-tzedakah.html</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://torahlock.app/blog/pirkei-avot-ethics-of-the-fathers.html</loc>
+    <lastmod>2026-06-09</lastmod>
   </url>
   <url>
     <loc>https://torahlock.app/blog/psalm-121-meaning-esa-einai.html</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-06-09</lastmod>
   </url>
   <url>
-    <loc>https://torahlock.app/blog/what-is-a-mezuzah.html</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/what-is-chesed.html</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/what-is-hitbodedut.html</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/psalm-91-meaning-yoshev-bseter-elyon.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/what-is-doomscrolling.html</loc>
-    <lastmod>2026-06-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/what-is-the-kaddish.html</loc>
-    <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://torahlock.app/blog/tefilat-haderech-travelers-prayer.html</loc>
-    <lastmod>2026-06-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://torahlock.app/blog/psalm-23-meaning-in-judaism.html</loc>
+    <lastmod>2026-06-09</lastmod>
   </url>
   <url>
     <loc>https://torahlock.app/blog/psalm-27-meaning-ledavid-hashem-ori.html</loc>
-    <lastmod>2026-06-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/psalm-91-meaning-yoshev-bseter-elyon.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/tefilat-haderech-travelers-prayer.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/tehillim-for-anxiety.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/tehillim-for-healing.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/the-power-of-tehillim-in-five-verses.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/tikkun-leil-shavuot.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-does-baruch-hashem-mean.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-a-dopamine-detox.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-a-mezuzah.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-chesed.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-daf-yomi.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-doomscrolling.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-hakarat-hatov.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-hitbodedut.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-lag-baomer.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-mussar.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-shacharit.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-shavuot.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-simcha.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-tefillin.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-tehillim.html</loc>
+    <lastmod>2026-06-09</lastmod>
   </url>
   <url>
     <loc>https://torahlock.app/blog/what-is-teshuvah.html</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-the-amidah.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-the-kaddish.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-the-shema.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-the-talmud.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-the-yetzer-hara.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-tikkun-olam.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-is-tzedakah.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/what-the-torah-says-about-phone-addiction.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/which-tehillim-to-say-every-morning.html</loc>
+    <lastmod>2026-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://torahlock.app/blog/why-the-morning-matters-most.html</loc>
+    <lastmod>2026-06-09</lastmod>
   </url>
 </urlset>

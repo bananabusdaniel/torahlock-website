@@ -1370,3 +1370,53 @@ footer p {
     gap: 1.25rem;
   }
 }
+
+
+/* === SEO components (post CTA, related reading, FAQ headings) === */
+.post-cta {
+  background: var(--primary);
+  border-radius: var(--radius-lg);
+  padding: 2.75rem 2rem;
+  text-align: center;
+  margin: 3.5rem 0 2.5rem;
+}
+.post-cta p {
+  color: var(--white);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+  opacity: 0.92;
+}
+.blog-related {
+  margin: 2.5rem 0;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+.blog-related-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  margin: 0 0 1rem;
+}
+.blog-related-grid { display: grid; gap: 0.6rem; }
+.blog-related-link {
+  display: block;
+  padding: 0.85rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: border-color var(--transition), background var(--transition);
+}
+.blog-related-link:hover { border-color: var(--gold); background: var(--bg-subtle); }
+.blog-faq-q {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 1.75rem 0 0.5rem;
+}
