@@ -136,8 +136,7 @@
     const controls = carousel.querySelector(".review-controls");
     const position = carousel.querySelector(".review-position");
     if (!track || cards.length < 2 || !controls) return;
-    controls.hidden = false;
-    carousel.dataset.enhanced = "true";
+    const mobile = window.matchMedia("(max-width: 760px)");
     const cardPosition = (card) =>
       card.getBoundingClientRect().left -
       track.getBoundingClientRect().left +
@@ -159,6 +158,7 @@
       );
     };
     const move = (step) => {
+      if (!mobile.matches) return;
       const index = (currentIndex() + step + cards.length) % cards.length;
       track.scrollTo({
         left: cardPosition(cards[index]),
@@ -180,6 +180,40 @@
         move(event.key === "ArrowRight" ? 1 : -1);
       }
     });
-    update();
+    const syncMode = () => {
+      controls.hidden = !mobile.matches;
+      track.tabIndex = mobile.matches ? 0 : -1;
+      track.setAttribute(
+        "aria-label",
+        mobile.matches
+          ? "Swipe or use arrow keys to browse reviews"
+          : "App Store review",
+      );
+      carousel.setAttribute(
+        "aria-label",
+        mobile.matches ? "Five-star App Store reviews" : "App Store review",
+      );
+      if (mobile.matches) {
+        carousel.setAttribute("aria-roledescription", "carousel");
+        carousel.dataset.enhanced = "true";
+      } else {
+        carousel.removeAttribute("aria-roledescription");
+        delete carousel.dataset.enhanced;
+      }
+      cards.forEach((card, index) => {
+        card.hidden = !mobile.matches && index > 0;
+        if (mobile.matches) {
+          card.setAttribute("aria-roledescription", "slide");
+          card.setAttribute("aria-label", `${index + 1} of ${cards.length}`);
+        } else {
+          card.removeAttribute("aria-roledescription");
+          card.removeAttribute("aria-label");
+        }
+      });
+      track.scrollTo({ left: 0, behavior: "auto" });
+      update();
+    };
+    mobile.addEventListener("change", syncMode);
+    syncMode();
   });
 })();
