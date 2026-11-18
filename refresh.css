@@ -1623,3 +1623,686 @@ img {
 .hero-home {
   overflow: clip;
 }
+
+/* Mobile conversion: one clear download, immediate credibility, less copy. */
+.hero-downloads {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 440px;
+  gap: 0;
+}
+.download-primary {
+  min-width: 285px;
+  min-height: 78px;
+  padding: 16px 30px;
+  gap: 17px;
+  justify-content: center;
+}
+.download-primary svg {
+  width: 29px;
+  height: 34px;
+  flex-shrink: 0;
+}
+.download-primary small {
+  font-size: 0.82rem;
+  margin-bottom: 5px;
+}
+.download-primary span {
+  font-size: 1.65rem;
+  letter-spacing: -0.035em;
+}
+.download-proof {
+  margin-top: 16px;
+  width: 100%;
+  scroll-margin-top: 110px;
+}
+.store-rating {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px 10px;
+  line-height: 1.4;
+}
+.rating-stars {
+  color: #8a6822;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+}
+.store-rating strong {
+  font-size: 0.86rem;
+  font-weight: 650;
+  white-space: nowrap;
+}
+.store-rating strong span {
+  font-weight: 400;
+  color: var(--muted);
+}
+.rating-count {
+  font-size: 0.74rem;
+  color: var(--muted);
+}
+.hero-testimonial {
+  margin: 15px 0 0;
+  border-left: 2px solid #d8cdac;
+  padding: 0 0 0 15px;
+}
+.hero-testimonial blockquote {
+  font-family: var(--serif);
+  font-size: 0.91rem;
+  line-height: 1.65;
+  color: #4c5a4d;
+  margin: 0;
+}
+.hero-testimonial figcaption {
+  font-size: 0.72rem;
+  color: #596756;
+  margin-top: 7px;
+  font-weight: 600;
+}
+.hero-testimonial figcaption span {
+  font-weight: 400;
+  color: var(--muted);
+}
+.android-link {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-height: 54px;
+  width: 100%;
+  max-width: 355px;
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+  line-height: 1.25;
+}
+.android-link svg {
+  width: 21px;
+  height: 23px;
+  color: #63764e;
+  flex-shrink: 0;
+}
+.android-availability {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.android-availability strong {
+  font-weight: 550;
+  font-size: 0.84rem;
+}
+.android-availability small {
+  font-size: 0.68rem;
+  color: #68725e;
+  background: #ecefe5;
+  padding: 4px 7px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+.android-join {
+  font-size: 0.78rem;
+  font-weight: 550;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  margin-left: auto;
+  white-space: nowrap;
+}
+.home-page .hero-home {
+  padding-top: 52px;
+  padding-bottom: 68px;
+  min-height: 730px;
+}
+.home-page .hero-copy {
+  padding-bottom: 0;
+}
+.home-page .hero-copy h1 {
+  font-size: clamp(3.25rem, 5.35vw, 4.55rem);
+  margin-bottom: 23px;
+}
+.home-page .hero-copy .lead {
+  margin-bottom: 26px;
+  max-width: 440px;
+}
+.home-page .hero-art {
+  height: 610px;
+}
+.home-page .hero-art::before {
+  background: #f0e7cf;
+}
+.home-page .hero-art .device-home {
+  width: 258px;
+  top: 4px;
+}
+.home-page .flow-section {
+  padding-top: 10px;
+  padding-bottom: 80px;
+}
+.home-page .flow-layout {
+  display: block;
+}
+.home-page .flow-copy {
+  text-align: center;
+}
+.home-page .flow-copy .eyebrow {
+  margin-bottom: 16px;
+}
+.home-page .flow-copy .editorial-title {
+  font-size: 2.8rem;
+}
+.home-page .flow-steps {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 38px 0 0;
+}
+.home-page .flow-step {
+  display: block;
+  text-align: center;
+}
+.home-page .flow-step-icon {
+  margin: 0 auto 16px;
+  width: 40px;
+  height: 40px;
+}
+.home-page .flow-step p {
+  max-width: none;
+}
+.home-page .widget-copy .lead {
+  max-width: 350px;
+  margin: 22px 0;
+}
+.home-page .product-section {
+  padding-top: 90px;
+  padding-bottom: 80px;
+}
+.home-page .product-window {
+  min-height: 585px;
+}
+.home-page .product-screen {
+  max-height: 585px;
+}
+.home-page .product-description h3 {
+  font-size: 2.25rem;
+}
+.home-page .product-description p {
+  max-width: 330px;
+}
+.home-page .faq-section {
+  padding-top: 70px;
+  padding-bottom: 75px;
+}
+.home-page .closing {
+  padding: 52px 30px;
+}
+.home-page .closing .editorial-title {
+  font-size: 3rem;
+}
+.closing-android {
+  display: block;
+  margin: 20px auto 0;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  width: max-content;
+  max-width: 100%;
+}
+.android-section {
+  padding-top: 0;
+  padding-bottom: 80px;
+  scroll-margin-top: 110px;
+}
+.android-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  background: #e9eddf;
+  border-radius: 32px;
+  padding: 60px;
+}
+.android-panel .editorial-title {
+  font-size: 3.3rem;
+}
+.android-panel .lead {
+  margin-top: 22px;
+  max-width: 350px;
+  font-size: 1rem;
+}
+.waitlist-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+.waitlist-form > label {
+  font-size: 0.87rem;
+  font-weight: 550;
+}
+.waitlist-form input[type="email"] {
+  width: 100%;
+  min-height: 60px;
+  background: #fff;
+  border: 1px solid #b8c2ae;
+  border-radius: 13px;
+  padding: 15px 18px;
+  font-size: 1rem;
+  color: var(--ink);
+  outline-offset: 4px;
+}
+.waitlist-form input[type="email"]:focus-visible {
+  outline: 2px solid #63794a;
+}
+.waitlist-submit {
+  background: var(--ink);
+  color: white;
+  border: 0;
+  border-radius: 13px;
+  min-height: 60px;
+  padding: 15px 24px;
+  font-size: 1rem;
+  font-weight: 550;
+}
+.waitlist-submit:disabled {
+  cursor: default;
+  opacity: 0.75;
+}
+.waitlist-trap {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.waitlist-status {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  min-height: 0;
+  color: #365330;
+}
+.waitlist-status:empty {
+  display: none;
+}
+.waitlist-form[data-state="error"] .waitlist-status {
+  color: #8d3226;
+}
+.waitlist-form[data-state="success"] input[type="email"] {
+  background: #eff3e8;
+  color: #475b3b;
+}
+.waitlist-privacy {
+  font-size: 0.76rem;
+  color: #58674c;
+  line-height: 1.6;
+  margin-top: 14px;
+}
+.waitlist-privacy a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.thank-you {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  min-height: 65vh;
+}
+.thank-you .text-link {
+  margin-top: 25px;
+}
+.website-privacy {
+  scroll-margin-top: 110px;
+  border-top: 1px solid var(--line);
+  margin-top: 40px;
+  padding-top: 5px;
+}
+@media (hover: hover) {
+  .android-link:hover .android-join,
+  .store-rating:hover strong {
+    color: #92712c;
+  }
+  .waitlist-submit:not(:disabled):hover {
+    background: #35513e;
+  }
+}
+@media (max-width: 1050px) {
+  .android-panel {
+    padding: 42px;
+    gap: 42px;
+  }
+  .home-page .hero-art {
+    transform: scale(0.88);
+    transform-origin: center right;
+  }
+  .home-page .hero-copy h1 {
+    font-size: 3.6rem;
+  }
+}
+@media (max-width: 760px) {
+  .site-nav {
+    min-height: 68px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+  .home-page .hero-home {
+    padding-top: 30px;
+    padding-bottom: 48px;
+    gap: 0;
+    min-height: 0;
+  }
+  .home-page .hero-copy h1 {
+    font-size: clamp(2.8rem, 11.5vw, 4.1rem);
+    line-height: 1.04;
+    margin-bottom: 18px;
+  }
+  .home-page .hero-copy .eyebrow {
+    font-size: 0.7rem;
+    margin-bottom: 15px;
+  }
+  .home-page .hero-copy .lead {
+    font-size: 1rem;
+    line-height: 1.65;
+    margin-bottom: 22px;
+  }
+  .hero-downloads {
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+  }
+  .download-primary {
+    width: 100%;
+    min-width: 0;
+    min-height: 78px;
+    border-radius: 20px;
+  }
+  .download-primary span {
+    font-size: 1.7rem;
+  }
+  .download-primary small {
+    font-size: 0.84rem;
+    letter-spacing: 0;
+  }
+  .download-proof {
+    margin-top: 15px;
+    text-align: left;
+  }
+  .store-rating {
+    justify-content: center;
+    gap: 5px 9px;
+  }
+  .rating-count {
+    font-size: 0.72rem;
+  }
+  .hero-testimonial {
+    margin: 16px 0 0;
+    padding-left: 12px;
+  }
+  .hero-testimonial blockquote {
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+  .hero-testimonial figcaption {
+    font-size: 0.72rem;
+    margin-top: 6px;
+  }
+  .android-link {
+    margin-top: 18px;
+    min-height: 51px;
+    max-width: none;
+    gap: 9px;
+  }
+  .android-availability {
+    gap: 7px;
+  }
+  .android-availability strong {
+    font-size: 0.84rem;
+  }
+  .android-join {
+    font-size: 0.8rem;
+  }
+  .home-page .hero-art {
+    height: 405px;
+    max-width: 430px;
+    width: 100%;
+    transform: none;
+    margin: 32px auto 0;
+  }
+  .home-page .hero-art::before {
+    width: 330px;
+    height: 330px;
+    top: 35px;
+    right: 0;
+  }
+  .home-page .hero-art::after {
+    inset: 20px -5px 15px;
+  }
+  .home-page .hero-art .device-home {
+    width: 178px;
+    left: calc(50% - 159px);
+    top: 0;
+    border-width: 4px;
+    border-radius: 29px;
+  }
+  .home-page .hero-art .device-home img {
+    border-radius: 24px;
+  }
+  .home-page .hero-art .device-home::after {
+    height: 13px;
+    top: 6px;
+  }
+  .home-page .hero-art .device-lock {
+    width: 159px;
+    right: calc(50% - 155px);
+    top: 48px;
+    border-width: 4px;
+    border-radius: 28px;
+  }
+  .home-page .hero-art .device-lock img {
+    border-radius: 23px;
+  }
+  .home-page .flow-section {
+    padding-top: 10px;
+    padding-bottom: 55px;
+  }
+  .home-page .flow-copy .editorial-title {
+    font-size: 2.25rem;
+  }
+  .home-page .flow-steps {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    margin-top: 29px;
+  }
+  .home-page .flow-step {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    text-align: left;
+    align-items: center;
+    gap: 14px;
+  }
+  .home-page .flow-step-icon {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+  }
+  .home-page .flow-step h3 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+  .home-page .flow-step p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .home-page .widget-section {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .home-page .widget-layout {
+    gap: 15px;
+  }
+  .home-page .widget-copy .lead {
+    margin: 20px auto;
+    max-width: 290px;
+    font-size: 1rem;
+  }
+  .home-page .widget-art {
+    height: 430px;
+    gap: 13px;
+  }
+  .home-page .widget-art img {
+    width: 42%;
+    max-height: 390px;
+    object-fit: contain;
+  }
+  .home-page .product-section {
+    padding-top: 55px;
+    padding-bottom: 50px;
+  }
+  .home-page .product-header {
+    margin-bottom: 25px;
+  }
+  .home-page .product-header .text-link {
+    margin-top: 19px;
+  }
+  .home-page .product-window {
+    min-height: 0;
+  }
+  .home-page .product-screen {
+    height: 430px;
+    padding: 10px 24px 0;
+    grid-row: 1;
+  }
+  .home-page .product-screen .device {
+    width: 214px;
+    transform: translateY(30px);
+  }
+  .home-page .product-description {
+    grid-row: 2;
+    padding: 28px 25px 34px;
+  }
+  .home-page .product-description .eyebrow {
+    display: none;
+  }
+  .home-page .product-description h3 {
+    font-size: 1.7rem;
+    margin-bottom: 12px;
+  }
+  .home-page .product-description p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .home-page .tabs {
+    margin-top: 22px;
+    width: 100%;
+    max-width: none;
+    justify-content: space-between;
+    gap: 0;
+    border-radius: 18px;
+    padding: 5px;
+  }
+  .home-page .tabs button {
+    font-size: 0.76rem;
+    padding: 10px 11px;
+    white-space: nowrap;
+  }
+  .home-page .small-features {
+    margin-top: 25px;
+    gap: 19px;
+  }
+  .home-page .video-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .home-page .video-layout {
+    gap: 26px;
+  }
+  .home-page .video-caption {
+    margin-top: 14px;
+  }
+  .home-page .faq-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .home-page .faq-intro .editorial-title br {
+    display: none;
+  }
+  .home-page .faq-intro .editorial-title em::before {
+    content: " ";
+  }
+  .home-page .faq-intro .text-link {
+    margin: 23px 0 12px;
+  }
+  .home-page .closing {
+    padding: 40px 24px;
+  }
+  .home-page .closing .editorial-title {
+    font-size: 2.35rem;
+  }
+  .home-page .closing .lead {
+    font-size: 0.95rem;
+  }
+  .home-page .closing .download-primary {
+    max-width: 360px;
+  }
+  .home-page .final-section {
+    padding-bottom: 35px;
+  }
+  .android-section {
+    padding-bottom: 45px;
+    scroll-margin-top: 85px;
+  }
+  .android-panel {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 35px 24px;
+    border-radius: 26px;
+  }
+  .android-panel .eyebrow {
+    font-size: 0.72rem;
+    margin-bottom: 17px;
+  }
+  .android-panel .editorial-title {
+    font-size: 2.55rem;
+  }
+  .android-panel .lead {
+    font-size: 0.95rem;
+    margin-top: 20px;
+  }
+  .waitlist-form input[type="email"],
+  .waitlist-submit {
+    min-height: 60px;
+  }
+  .waitlist-privacy {
+    font-size: 0.74rem;
+  }
+  .thank-you {
+    padding-top: 60px;
+    padding-bottom: 75px;
+    min-height: 65vh;
+  }
+}
+@media (max-width: 360px) {
+  .home-page .tabs button {
+    font-size: 0.72rem;
+    padding: 10px 8px;
+  }
+  .rating-count {
+    width: 100%;
+    text-align: center;
+  }
+  .android-availability {
+    gap: 5px;
+  }
+  .android-availability small {
+    font-size: 0.62rem;
+    padding: 4px 6px;
+  }
+  .android-join {
+    font-size: 0.74rem;
+  }
+  .home-page .hero-art {
+    transform: scale(0.91);
+    transform-origin: top center;
+    margin-bottom: -30px;
+  }
+  .android-panel {
+    padding: 30px 20px;
+  }
+}
