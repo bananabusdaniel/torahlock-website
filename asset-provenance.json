@@ -1,0 +1,110 @@
+{
+  "home": {
+    "source": "/Users/danielnamatinia/Desktop/Code/TorahLockApp/Screenshots/03-Home/37-home-not-completed.png",
+    "file": "assets/refresh/home.webp",
+    "width": 800,
+    "height": 1739
+  },
+  "modeh-ani": {
+    "source": "/Users/danielnamatinia/Desktop/Code/TorahLockApp/Screenshots/04-Daily-Flow/43-prayer-modeh_ani.png",
+    "file": "assets/refresh/modeh-ani.webp",
+    "width": 800,
+    "height": 1739
+  },
+  "shema": {
+    "source": "/Users/danielnamatinia/Desktop/Code/TorahLockApp/Screenshots/04-Daily-Flow/44-prayer-shema.png",
+    "file": "assets/refresh/shema.webp",
+    "width": 800,
+    "height": 1739
+  },
+  "check-in": {
+    "source": "/Users/danielnamatinia/Desktop/Code/TorahLockApp/Screenshots/04-Daily-Flow/45-prayer-tehillim_checkin.png",
+    "file": "assets/refresh/check-in.webp",
+    "width": 800,
+    "height": 1739
+  },
+  "psalms": {
+    "source": "/Users/danielnamatinia/Desktop/Code/TorahLockApp/Screenshots/04-Daily-Flow/56-tehillim-assigned.png",
+    "file": "assets/refresh/psalms.webp",
+    "width": 800,
+    "height": 1739
+  },
+  "library": {
+    "source": "/Users/danielnamatinia/Desktop/Code/TorahLockApp/Screenshots/06-Tehillim-Library/66-library.png",
+    "file": "assets/refresh/library.webp",
+    "width": 800,
+    "height": 1739
+  },
+  "daily-flow": {
+    "source": "/Users/danielnamatinia/Desktop/Code/TorahLockApp/Screenshots/05-Daily-Flow-Editor/58-editor.png",
+    "file": "assets/refresh/daily-flow.webp",
+    "width": 800,
+    "height": 1739
+  },
+  "insights": {
+    "source": "/Users/danielnamatinia/Desktop/Code/TorahLockApp/Screenshots/07-Profile/78-insights-7D.png",
+    "file": "assets/refresh/insights.webp",
+    "width": 800,
+    "height": 1739
+  },
+  "streak": {
+    "source": "/Users/danielnamatinia/Desktop/Code/TorahLockApp/Screenshots/04-Daily-Flow/57-streak-celebration.png",
+    "file": "assets/refresh/streak.webp",
+    "width": 800,
+    "height": 1739
+  },
+  "shabbat": {
+    "source": "/Users/danielnamatinia/Desktop/Code/TorahLockApp/Screenshots/09-Shabbat/87-shabbat-mode.png",
+    "file": "assets/refresh/shabbat.webp",
+    "width": 800,
+    "height": 1739
+  },
+  "widget-guide": {
+    "source": "/Users/danielnamatinia/Desktop/Code/TorahLockApp/Screenshots/07-Profile/84-widget-guide.png",
+    "file": "assets/refresh/widget-guide.webp",
+    "width": 800,
+    "height": 1739
+  },
+  "widget-home": {
+    "source": "/Users/danielnamatinia/Desktop/Code/TorahLockApp/TorahLockApp/HomescreenWidgetExample.png",
+    "file": "assets/refresh/widget-home.webp",
+    "width": 800,
+    "height": 1625
+  },
+  "widget-lock": {
+    "source": "/Users/danielnamatinia/Desktop/Code/TorahLockApp/TorahLockApp/LockscreenWidgetExample.png",
+    "file": "assets/refresh/widget-lock.webp",
+    "width": 800,
+    "height": 1654
+  },
+  "widget-lock-current": {
+    "source": "/Users/danielnamatinia/Desktop/TorahLockDocs/OnboardingVersy-Originalpaths/LockScreentehilimexample.PNG",
+    "file": "assets/refresh/widget-lock-current.webp",
+    "width": 800,
+    "height": 1738
+  },
+  "app-icon": {
+    "source": "/Users/danielnamatinia/Desktop/TorahLockDocs/TorahLockAppIcons/PROD-TorahLockAppLogo-1024-FINAL.png",
+    "file": "assets/refresh/app-icon.webp",
+    "width": 160,
+    "height": 160
+  },
+  "walkthrough": {
+    "source": "/Users/danielnamatinia/Desktop/Code/TorahLockApp/TorahLockApp/Resources/OnboardingV1Walkthrough.mp4",
+    "file": "assets/refresh/media/walkthrough.mp4",
+    "duration_seconds": 24.5,
+    "notes": "Trimmed before unrelated social media content. Resized to 540px wide, audio removed, poster from 11 seconds."
+  },
+  "testimonials": {
+    "source": "TorahLockApp/TorahLockApp/Localizable.xcstrings",
+    "keys": [
+      "onboarding.testimonial.author1",
+      "onboarding.testimonial.text1",
+      "onboarding.testimonial.author2",
+      "onboarding.testimonial.text2",
+      "onboarding.testimonial.author7",
+      "onboarding.testimonial.text7"
+    ],
+    "notes": "Existing English onboarding testimonials. No App Store ratings or review counts are implied."
+  }
+}

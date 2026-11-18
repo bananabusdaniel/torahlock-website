@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#091B34">
+  <meta name="theme-color" content="#fcfbf8">
   <title>Tikkun Leil Shavuot: All-Night Torah Learning</title>
   <meta name="description" content="A plain-English guide to Tikkun Leil Shavuot — the custom of staying up all night learning Torah on Shavuot. Origins, what to study, and how to actually do it.">
   <link rel="canonical" href="https://torahlock.app/blog/tikkun-leil-shavuot.html">
@@ -52,20 +52,48 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="/refresh.css">
+  <script src="/site.js" defer></script>
 </head>
 <body>
 
-  <nav>
-    <a href="/" class="nav-logo">Torah Lock</a>
-    <ul class="nav-links">
-      <li><a href="../blog.html">Blog</a></li>
-      <li><a href="../privacy.html">Privacy</a></li>
-      <li><a href="../terms.html">Terms</a></li>
-      <li><a href="../support.html">Support</a></li>
+  <a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="brand" href="/"
+      ><img
+        src="/assets/refresh/app-icon.webp"
+        width="160"
+        height="160"
+        alt=""
+        loading="eager"
+        decoding="async"
+        class=""
+      />Torah Lock</a
+    >
+    <ul class="site-links" id="site-links">
+      <li><a href="/features.html">Features</a></li>
+      <li><a href="/widgets.html">Widgets</a></li>
+      <li><a href="/#stories">Stories</a></li>
+      <li><a href="/blog.html">Journal</a></li>
     </ul>
+    <a
+      class="nav-download"
+      href="https://apps.apple.com/app/apple-store/id6759348814"
+      target="_blank"
+      rel="noopener"
+      >Get the app</a
+    ><button
+      class="menu-toggle"
+      aria-controls="site-links"
+      aria-expanded="false"
+    >
+      Menu
+    </button>
   </nav>
+</header>
 
-  <main>
+  <main id="main">
     <article class="blog-post">
       <a href="../blog.html" class="blog-back">&larr; Back to Blog</a>
 
@@ -154,18 +182,45 @@
     </article>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Torah Lock. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="/features.html">Features</a>
-      <a href="/faq.html">FAQ</a>
-      <a href="/about.html">About</a>
-      <a href="../blog.html">Blog</a>
-      <a href="../privacy.html">Privacy</a>
-      <a href="../terms.html">Terms</a>
-      <a href="../support.html">Support</a>
+  <footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a class="brand" href="/"
+        ><img
+          src="/assets/refresh/app-icon.webp"
+          width="160"
+          height="160"
+          alt=""
+          loading="lazy"
+          decoding="async"
+          class=""
+        />Torah Lock</a
+      >
+      <p>A little space for Hashem.<br />Every single day.</p>
     </div>
-  </footer>
+    <div class="footer-columns">
+      <div class="footer-column">
+        <strong>The app</strong><a href="/features.html">Features</a
+        ><a href="/widgets.html">Widgets</a
+        ><a href="https://apps.apple.com/app/apple-store/id6759348814"
+          >Download for iPhone</a
+        >
+      </div>
+      <div class="footer-column">
+        <strong>Explore</strong><a href="/blog.html">Journal</a
+        ><a href="/about.html">Our story</a><a href="/faq.html">Questions</a>
+      </div>
+      <div class="footer-column">
+        <strong>Here to help</strong><a href="/support.html">Support</a
+        ><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Torah Lock. All rights reserved.</p>
+    <span>Made for mornings with meaning.</span>
+  </div>
+</footer>
 
 </body>
 </html>
