@@ -106,5 +106,22 @@
       "onboarding.testimonial.text7"
     ],
     "notes": "Existing English onboarding testimonials. No App Store ratings or review counts are implied."
+  },
+  "homepage_reviews": {
+    "source": "https://itunes.apple.com/us/rss/customerreviews/id=6759348814/sortBy=mostRecent/json",
+    "verified_date": "2026-11-19",
+    "reviews": [
+      {
+        "author": "Hof_Coral",
+        "review_id": "13973903898",
+        "rating": 5
+      },
+      {
+        "author": "IMBUSY",
+        "review_id": "14751610274",
+        "rating": 5
+      }
+    ],
+    "notes": "Short excerpts of actual five-star App Store reviews. The carousel does not assign ratings to onboarding testimonials."
   }
 }

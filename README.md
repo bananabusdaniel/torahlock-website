@@ -16,4 +16,4 @@ JavaScript keeps signup on the page and only confirms success after the service 
 
 ## App Store credibility
 
-The homepage shows the US App Store rating, verified on November 19, 2026: **4.9 / 5 from 72 ratings**. The displayed testimonial is an excerpt attributed to Hof_Coral. These values are static; verify them against the linked App Store listing before updating. Screenshot sources are recorded in `asset-provenance.json`.
+The homepage shows the US App Store rating, verified on November 19, 2026: **4.9 / 5 from 75 ratings**. The carousel contains excerpts of verified five-star App Store reviews by Hof_Coral and IMBUSY. These values are static; verify them against the linked App Store listing before updating. Screenshot sources are recorded in `asset-provenance.json`.

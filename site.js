@@ -127,3 +127,59 @@
     }
   });
 })();
+
+// Native scrolling supports swipe without JavaScript; controls add keyboard access.
+(() => {
+  document.querySelectorAll(".review-carousel").forEach((carousel) => {
+    const track = carousel.querySelector(".review-track");
+    const cards = [...carousel.querySelectorAll(".review-card")];
+    const controls = carousel.querySelector(".review-controls");
+    const position = carousel.querySelector(".review-position");
+    if (!track || cards.length < 2 || !controls) return;
+    controls.hidden = false;
+    carousel.dataset.enhanced = "true";
+    const cardPosition = (card) =>
+      card.getBoundingClientRect().left -
+      track.getBoundingClientRect().left +
+      track.scrollLeft;
+    const currentIndex = () =>
+      cards.reduce(
+        (best, card, index) =>
+          Math.abs(cardPosition(card) - track.scrollLeft) <
+          Math.abs(cardPosition(cards[best]) - track.scrollLeft)
+            ? index
+            : best,
+        0,
+      );
+    const update = () => {
+      const index = currentIndex();
+      position.textContent = `${index + 1} of ${cards.length}`;
+      cards.forEach((card, i) =>
+        card.setAttribute("aria-current", String(i === index)),
+      );
+    };
+    const move = (step) => {
+      const index = (currentIndex() + step + cards.length) % cards.length;
+      track.scrollTo({
+        left: cardPosition(cards[index]),
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? "auto"
+          : "smooth",
+      });
+    };
+    carousel
+      .querySelector(".review-previous")
+      .addEventListener("click", () => move(-1));
+    carousel
+      .querySelector(".review-next")
+      .addEventListener("click", () => move(1));
+    track.addEventListener("scroll", update, { passive: true });
+    track.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+        event.preventDefault();
+        move(event.key === "ArrowRight" ? 1 : -1);
+      }
+    });
+    update();
+  });
+})();
